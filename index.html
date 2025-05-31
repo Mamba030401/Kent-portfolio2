@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+  <style>
+    body.light-mode {
+      background-color: #ADD8E6; /* Light blue */
+      color: #000;
+    }
+    body.dark-mode {
+      background-color: #000;
+      color: #fff;
+    }
+    #darkToggle {
+      border: 2px solid #fff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    #darkToggle:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body class="light-mode transition-colors duration-500">
+
+<header class="p-4 flex justify-between items-center">
+  <h1 class="text-xl font-bold">My Portfolio</h1>
+  <nav class="space-x-4">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="darkToggle">🌙</button>
+  </nav>
+</header>
+
+<section id="about" class="p-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <div class="inline-block border-4 border-white shadow-md p-1">
+    <img src="my-photo.jpg" alt="Profile" class="w-48 h-48 object-cover">
+  </div>
+  <p class="max-w-lg mx-auto mt-4 text-lg leading-relaxed">
+   <p class="max-w-lg mx-auto mt-4 text-lg leading-relaxed">My name is Kent Howard T. Lagang, and I am a Computer Science graduate with a great interest in technology and a strong sense of personal ethics. While I'm still honing my programming talents, I feel that compassion, loyalty, and honesty are the cornerstones of success in both life and technology.</p>
+   <p class="max-w-lg mx-auto mt-4 text-lg leading-relaxed">I appreciate working collaboratively, learning from others, and seeing problems as chances to grow. My objective is to improve my programming and technology abilities, obtain hands-on experience, and make a constructive contribution to the projects and teams in which I participate.</p>
+   <p class="max-w-lg mx-auto mt-4 text-lg leading-relaxed">I'm looking forward to connecting with individuals that value learning, growth, and generating meaningful solutions. Let's talk about how we can learn, contribute, and develop together!</p>
+
+
+   
+</section>
+
+<section id="projects" class="p-8" data-aos="fade-right" data-aos-duration="1200">
+  <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+  <div class="max-w-4xl mx-auto space-y-4">
+    <p class="hover:scale-105 transition">📁 Caraga Hotel Reservation System : Programming Language: PHP, Bootstrap, JavaScript, HTML, complete hotel booking platform with admin features and a responsive UI.
+     Highlights: Room availability checks, booking system, session management.</p>
+    <p class="hover:scale-105 transition">📁 Entrance Exam Management System : Programming Language: PHP, Mysql, JavaScript,HTML, Entrance examination for students aspiring to enroll in that institution and obtain a substantial discount or scholarship.</p>
+    <p class="hover:scale-105 transition">📁 Fish Guard System : Programming Language: JavaScript,HTML, Complete protection for emails, websites, and applications. Highlights: To preserve the privacy of older people and young people, we created Fish Guard.</
+</div>
+</section>
+
+<section id="achievements" class="p-8" data-aos="fade-left" data-aos-duration="1200">
+  <h2 class="text-3xl font-bold text-center mb-6">Achievements</h2>
+  <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+    <img src="achievement1.jpg" alt="Achievement 1" class="rounded shadow hover:scale-105 transition">
+    <img src="achievement2.jpg" alt="Achievement 2" class="rounded shadow hover:scale-105 transition">
+  </div>
+</section>
+
+<section id="skills" class="p-8" data-aos="fade-up" data-aos-duration="1000">
+  <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+  <div class="max-w-3xl mx-auto space-y-4">
+    <p data-aos="fade-right" class="transition transform hover:scale-105">💻 Computer Science Fundamentals , Basic Programming (e.g., Python, Java, C++)</p>
+    <p data-aos="fade-left" class="transition transform hover:scale-105">🎨 Team Collaboration, Problem-Solving, Communication</p>
+    <p data-aos="fade-right" class="transition transform hover:scale-105">🚀 Adaptability and Willingness to Learn, Time Management, Microsoft Office (Word, Excel, PowerPoint)</p>
+  </div>
+</section>
+
+<section id="contact" class="p-8" data-aos="fade-up" data-aos-duration="1000">
+  <h2 class="text-3xl font-bold text-center mb-4">Contact Me</h2>
+  <form action="https://formspree.io/forms/xdkznpwl/overview" method="POST" class="max-w-md mx-auto space-y-4">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded">
+    <input type="email" name="_replyto" placeholder="Your Email" required class="w-full p-2 rounded">
+    <textarea name="message" placeholder="Your Message" required class="w-full p-2 rounded"></textarea>
+    <button type="submit" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 transition">Send</button>
+  </form>
+</section>
+
+<footer class="text-center p-4 space-x-4 text-2xl">
+  <a href="https://www.facebook.com/k.lagang003/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://web.telegram.org/k/" target="_blank"><i class="fab fa-telegram"></i></a>
+  <a href="https://discord.gg/2tVbP65J" target="_blank"><i class="fab fa-discord"></i></a>
+  <p class="text-sm">&copy; 2025 KENT HOWARD T. LAGANG . All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>AOS.init({ duration: 1200, once: true });</script>
+</body>
+</html>
